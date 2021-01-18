@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix::before, .clearfix::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+ul,li {
+    list-style: none;
+}
+
+a {
+    color: #222328;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    color: #222328;
+/*    background-color: #eee;*/
+}
+
+/* 설정 끝 */
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color:white;
+    position: fixed;
+    top:0;
+    left:0;
+    box-shadow: 0 0 3px 0 gray;
+    z-index: 5;
+    color: #111;
+}
+
+.header_in {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+.title {
+    text-align: center;
+    font-size: 24px;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.partner {
+    width: 1200px;
+    height: 300px;
+    margin: 30px auto;
+}
+.partner:hover {
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.2);
+}
+.partner a {
+    display:block;
+    width: 100%;
+    height: 300px;
+    background-image:url(../images/partners.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 0;
+}
+.category_menu{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.category_menu ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.category_menu li {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color:azure;
+    position: relative;
+}
+
+.category_menu li:after {
+    display:block;
+    content:"";
+    width: 100px;
+    height: 2px;
+    background-color:#ddd;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.category_menu li.on:after{
+    background-color: #00e24e;
+}
+.category_menu li.help {
+    background-color: red;
+}
+.category> div {
+    padding: 50px 0px;
+}
+.category> div:nth-child(1){background-color: #97e8b6;}
+.category> div:nth-child(2){background-color: #d5dcfc;}
+.category> div:nth-child(3){background-color: #f0e98a;}
+.category> div:nth-child(4){background-color: #f7e0ff;}
+.category> div:nth-child(5){background-color: #e28164;}
+.cont_box {
+    width: 1200px;
+    margin: 0 auto 70px auto;
+}
+.cont_box>p {
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+/*
+.cont_box ul li:nth-child(1) a {
+    display:block;
+    background-image:url(../images/a1.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:center;
+}
+*/
+.category ul{
+    display: flex;
+    justify-content: space-between;
+}
+/*.category_menu li:hover:after{
+    background-color:#00e24e;    
+}*/
+.category h3{
+    margin: 50px 20px 20px 10px;
+}
+
+.category li{
+    width:100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin-left: 20px;
+    background-color:#fcfcfc;
+    border-radius: 10px ;
+/*    border: 1px solid #d1d1d1;*/
+}
+.category li:first-child {
+    margin-left: 0;
+}
+.category h4{
+    margin: 20px 0 20px 10px;
+    text-align: center;
+}
+.category .cont_box li:hover{
+    transform: translateY(1rem);}
+.category img {
+    width:100%;
+    height: 300px;
+}
+
+.category .info {
+    width:100%;
+    height: 50px;
+    line-height: 50px;
+    display:flex;
+    justify-content: center;
+}
+.category .info span i {
+    color: #d1d1d1;
+    margin: 10px 15px;
+}
+.category .info span i:hover {
+    color: red;
+}
+.category .date {
+    font-size: 14px;
+    padding-left: 10px;
+    font-family: "나눔고딕",NanumGothic,"맑은 고딕",Malgun Gothic,"Apple SD Gothic Neo"
+}
+.qnet {
+    background-image:url(../images/qnet.png);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.promotion_area{
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 300;
+}
+
+#footer {
+    width: 100%;
+    background-color: #f5f5f5;
+    box-shadow: 3px 0 0 0 gray;
+}
+
+.foot_in {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+
+
