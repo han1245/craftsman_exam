@@ -7,35 +7,98 @@
     <meta name="author" content="HyunChul Han">
     <meta name="description" content="I Can do it - 한다면 한다 한현철 프론트엔드 & 웹 퍼블리셔 포트폴리오 입니다.">
     <meta name="keywords" content="한현철, 웹퍼블리셔, 프론트엔드, 포트폴리오, web, front, frontend, portfolio">
+    <link rel="stylesheet" href="./portweb.css">
+    <script src="https://kit.fontawesome.com/f7e2f42024.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="wrap">
-        <header id="header">
-            <div class="header_in">
-                <h1 class="logo"><a href="">로고</a></h1>
-                <div class="menu"></div>
+        <header class="header">
+            <div class="header__in">
+                <class class="header__logo">
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            로고 혹은 내이름
+                        </a>        
+                    </div>
+                </class>
+                <nav class="header__nav">
+                    <ul class="header__nav__list">
+                        <li class="header__nav__item"><a href="">Info</a></li>
+                        <li class="header__nav__item"><a href="">Skill</a></li>
+                        <li class="header__nav__item"><a href="">Projects</a></li>
+                        <li class="header__nav__item"><a href="">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
-        <div id="main_home">
-            <div class="main_home_inner"></div>
+        <div class="main_home">
+            <div class="main_home_inner">
+                <div class="main_home__info info_on">
+                    <p class="main_home__positon">Frontend Developer</p>
+                    <p class="main_home__name">Han Hyun Chul</p>
+                    <span class="main_home__motto ">기본에 충실하겠습니다.</span>
+                </div>
+                <div class="main_home__info">
+                    <p class="main_home--positon">Frontend Developer</p>
+                    <p class="main_home--name">Han Hyun Chul</p>
+                    <span class="main_home--motto">소통으로 신뢰를 쌓는다.</span>
+                </div>
+                <div class="main_home__info">
+                    <p class="main_home--positon">Frontend Developer</p>
+                    <p class="main_home--name">Han Hyun Chul</p>
+                    <span class="main_home--motto">배움을 즐긴다.</span>
+                </div>
+            </div>
         </div>
-        <div id="main_background">
-            
+        <div class="main_background">
+            <div class="main__bg--fade">
+                <div class="main__bg--fade_image">
+                    관련 이미지 선정
+                </div>
+                <div class="main__bg--fade_image">
+                    관련 이미지 선정
+                </div>
+                <div class="main__bg--fade_image">
+                    관련 이미지 선정
+                </div>
+            </div>
         </div>
-        <div id="container">
-            <section class="introduction">https://portfolio.junhobaik.synology.me/#about</section>
-            <section class="skills">
-                
+        <div class="content">
+            <section class="cotent__info">
+                https://portfolio.junhobaik.synology.me/#about
+                http://dreamakerhy.dothome.co.kr/#page4
+                http://kijepark.com/#Services
             </section>
-            <section class="projects">
-                
+            <section class="content__skills">
+                <div class="skill_list">
+                    <div class="skill_list--html"><i class="fab fa-html5"></i></div>
+                    <div class="skill_list--css"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill_list--js"><i class="fab fa-js-square"></i></div>
+                    <div class="skill_list--python"><i class="fab fa-python"></i></div>
+                    <div class="skill_list--git"><i class="fab fa-github"></i></div>
+                </div>
             </section>
-            <section class="contact">
-                
+            <section class="content__projects">
+                <div class="project_list">
+                    <div class="project_list--wrap">
+                        <div class="project_list--ikea"></div>
+                        <div class="project_list--goodchoice"></div>
+                        <div class="project_list--kt"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="content__contact">
+                <div class="contact_list">
+                    <div class="contact_list__email"><i class="fas fa-envelope"></i>이메일</div>
+                    <div class="contact_list__address"><i class="fas fa-map-marker-alt"></i>주소: 넣지말까?</div>
+                    <div class="contact_list_phone">휴대폰: </div>                    
+                </div>
             </section>
         </div>
-        <footer id="footer">
-            <div class="copyright"></div>
+        <footer class="footer">
+            <div class="footer__copyright">
+                <p>COPYRIGHT © 2021  <em>Han Hyun Chul </em> All RIGHTS RESERVED.</p>
+            </div>
         </footer>
     </div>
 </body>
