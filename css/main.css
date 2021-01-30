@@ -33,11 +33,12 @@ body {
     width: 100%;
     margin: 0 auto;
     margin-top: 150px;
+    
 }
 
 #header{
     width: 100%;
-    height: 100px;
+    height: 150px;
     line-height: 100px;
     background-color:white;
     position: fixed;
@@ -47,7 +48,6 @@ body {
     z-index: 5;
     color: #111;
 }
-
 .header_in {
     width: 1200px;
     margin: 0 auto;
@@ -57,14 +57,51 @@ body {
     text-align: center;
     font-size: 24px;
 }
+.header_menu{
+    width: 100%;
+}
+.header_menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header_menu li {
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.header_menu li:after {
+    display:block;
+    content:"";
+    width: 100px;
+    height: 2px;
+    background-color:#ddd;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header_menu li.on:after{
+    background-color: #00e24e;
+}
+.header_menu li.help {
+    background-color: red;
+}
+
+
+/* container */
 .container {
     width: 100%;
     margin: 0 auto;
+    position:relative;
 }
 .partner {
     width: 1200px;
     height: 300px;
     margin: 30px auto;
+    /*slick.css 3*/
 }
 .partner:hover {
     box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.2);
@@ -78,6 +115,7 @@ body {
     background-size: 100%;
     background-position: center 0;
 }
+
 .category_menu{
     width: 1200px;
     margin: 0 auto;
@@ -117,11 +155,14 @@ body {
 .category> div {
     padding: 50px 0px;
 }
-.category> div:nth-child(1){background-color: #97e8b6;}
-.category> div:nth-child(2){background-color: #d5dcfc;}
-.category> div:nth-child(3){background-color: #f0e98a;}
-.category> div:nth-child(4){background-color: #f7e0ff;}
-.category> div:nth-child(5){background-color: #e28164;}
+.category> div:last-child {
+    padding: 50px 0px  100px 0px;
+}
+.cont_wrap.number1 {background-color: #97e8b6;}
+.cont_wrap.number2{background-color: #d5dcfc;}
+.cont_wrap.number3{background-color: #f0e98a;}
+.cont_wrap.number4{background-color: #f7e0ff;}
+.cont_wrap.number5{background-color: #e28164;}
 .cont_box {
     width: 1200px;
     margin: 0 auto 70px auto;
@@ -130,15 +171,14 @@ body {
     padding-left: 1rem;
     margin-bottom: 2rem;
 }
-/*
-.cont_box ul li:nth-child(1) a {
-    display:block;
-    background-image:url(../images/a1.png);
-    background-repeat: no-repeat;
-    background-size:100%;
-    background-position:center;
+.cont_notice {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 18px;
 }
-*/
+.cont_notice >.point {
+    font-size: 20px;
+    color: firebrick;
+}
 .category ul{
     display: flex;
     justify-content: space-between;
@@ -210,6 +250,10 @@ body {
     width: 100%;
     background-color: #f5f5f5;
     box-shadow: 3px 0 0 0 gray;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 100;
 }
 
 .foot_in {
@@ -218,7 +262,35 @@ body {
     text-align: center;
     height: 100px;
     line-height: 100px;
+    position: relative;
+}
+.scroll_down{
+    position: absolute; /*footer 기준*/
+/*    bottom: 330%;*/
+    right: 0%;
+    transform: rotate(90deg);
+    width: 150px;
+    height: auto;
+    animation-duration: 3s;
+    animation-name: scrollupdown;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrollupdown {
+    from {
+        top: -500%;
+    }
+    to {
+        top: -300%;
+    }
 }
 
 
+.banner {
+    position:fixed;
+    top: 200px;
+    left: 20px;
+    z-index: 100;
+    
+}
 

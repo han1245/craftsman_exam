@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #222328;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+
+.modal{
+    width:100%;
+    height:100%;
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    z-index: 120; /* header의 z-index값보다 크게 설정*/
+    display:none;
+}
+.modal_inner{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    
+}
+.modal_tit {text-align: center; font-size: 28px; font-weight: 700;}
+.modal_btn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 30px;
+}
+
+
+#header {
+    width: 200px;
+    height: 650px;
+    float: left;
+    background-color:#a6fff8;
+}
+
+.logo {
+    width: 200px;
+    height: 40px;
+    padding-top: 30px;
+}
+
+.gnb {
+    width: 200px;
+    height: 700px;
+    padding-top: 60px;
+}
+.gnb > ul > li {
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+}
+.gnb > ul > li > a{
+    font-size: 20px;
+    display:block;
+    font-weight: 700;
+    color: #000;
+    border-top: 1px solid #222;
+}
+
+.gnb > ul > li:last-child {
+    border-bottom: 1px solid #222;
+}
+
+
+.gnb > ul > li:hover > a{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.gnb > ul > li > .submenu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    height: 200px;
+    z-index:1;
+    background-color:aliceblue;
+    display:none;
+}
+.gnb > ul > li > .submenu > li{
+    line-height: 50px;
+}
+.gnb > ul > li > .submenu > li:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.gnb > ul > li > .submenu > li > a {
+     display:block;
+    color: #333;
+}
+.gnb > ul > li > .submenu > li > a:hover {
+     color: deepskyblue;   
+}
+.contents {
+    float: left;
+    width: 800px;
+    height: 650px; /* 추가 */
+}
+.slide {
+    width:800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.slideList {
+    width: 2400px;
+    height: 350px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.slideImg {
+    float: left;
+    width: 800px;
+    height: 350px;
+}
+.slideImg img{
+    width: 100%;
+    height: 100%;
+}
+.container > section{
+    float: left;
+}
+/* 공지사항, 갤러리 영역 */
+.notification, .gallary {
+    width:300px;
+    height: 200px;
+    position: relative;
+}
+
+.container>section h2 {
+    font-size: 16px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #87daff;
+    position:absolute;
+    top:0;
+    left: 0;
+    border-radius: 0 20px 0 0;
+}
+
+.notification ul {
+    width: 300px;
+    position:absolute;
+    top: 30px;
+    left: 0;
+}
+
+.notice li {
+    width: 100%;
+    line-height: 30px;
+    position: relative;
+    background-color: aliceblue;
+    border-top: 1px solid #ccc;
+}
+.notice li a{
+    font-size: 13px;
+    color: #222;
+}
+.notice li:hover{
+     background-color: rgba(0,0,0,0.3);   
+}
+ .notice li .day{
+    font-size: 11px;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+/* gallery 영역 */
+.gal li {
+    float: left;
+    width: 90px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+.gal li img {
+    width: 100%;
+    height: 100%;
+}
+.gal li:hover img {
+    opacity: 0.7;   /*투명도 변화*/
+}
+/* baro 영역 */
+.baro {
+    width: 200px;
+    height: 200px;
+}
+.baro img {
+    width: 100%;
+    height: 170px;
+}
+.baro .br_tit {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.baro ul {
+    width: 100%;
+}
+.baro li {
+    float: left;
+    width: 50%;
+    height: 150px;
+    line-height: 150px;
+    text-align:center;
+    background-color: antiquewhite;
+    box-sizing : border-box;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+}
+#footer > div {
+    float: left; 
+    height: 100%; 
+    box-sizing: border-box;
+    padding-top: 40px;}
+.f_logo {
+    width: 200px;
+}
+
+.f_copy {
+    width: 400px;
+}
+.f_copy p{   
+    font-size: 12px;   
+    color: #555;
+    text-align: center;
+}
+.f_family {
+    width: 200px;
+}
